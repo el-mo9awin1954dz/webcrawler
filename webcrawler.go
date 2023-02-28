@@ -37,7 +37,7 @@ func main(){
 
 		who := "ELMO9AWIMDZ"
 
-		notify.Alert("WEBCRAWLER", "SETUP AND USAGE",who, "bug.png")
+		notify.Alert("WEBCRAWLER", "SETUP AND USAGE",who, "/root/bug.png")
 								
 
 		isEnabled := true
@@ -111,7 +111,7 @@ func main(){
                 fmt.Println(" 🤖 "+line)
 
 
-		notify.Alert("WEBCRAWLER", "CRAWLE ",line, "bug.png")
+		notify.Alert("WEBCRAWLER", "CRAWLE ",line, "/root/bug.png")
 				
 
                 alert.Error.Println("⚠️  ATTACK ON => 🤖 "+line)
@@ -123,14 +123,14 @@ func main(){
 		// Starting the crawler by passing the list of URLs.
 		myCrawler.Start(urls)
 		
-		notify.Alert("WEBCRAWLER", "DONE FOR ",line, "bug.png")
+		notify.Alert("WEBCRAWLER", "DONE FOR ",line, "/root/bug.png")
 				
 	}
 	
 	alert.Error.Println("⚠️  SAVE ON => 🤖 "+*save)
 			
 
-	notify.Alert("WEBCRAWLER", "SAVE ON ",*save, "bug.png")
+	notify.Alert("WEBCRAWLER", "SAVE ON ",*save, "/root/bug.png")
 			
 
 	os.Rename("crawler",*save)
